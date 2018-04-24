@@ -14,11 +14,11 @@ TEST_CASE("remove"){
 
 TEST_CASE("operator ==")
 {
-	tree<int> A;
+	tree_t<int> A;
 	A.insert(1);
 	A.insert(2);
 	
-	tree<int> B { 1, 2 };
+	tree_t<int> B { 1, 2 };
 	
 	REQUIRE( A == B );
 }
