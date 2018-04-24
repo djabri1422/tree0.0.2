@@ -50,6 +50,7 @@ private:
 			{
 				return this->left->find_node(value);
 			}
+			return false;
 		}
 
 		void print_(std::ostream & stream, T set) const {
