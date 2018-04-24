@@ -8,6 +8,6 @@ TEST_CASE("remove"){
     tree.insert(1);
     tree.remove(1);
     
-    REQUIRE();
+    REQUIRE(tree.return_root() == nullptr);
 
 }
