@@ -22,3 +22,13 @@ TEST_CASE("operator ==")
 	
 	REQUIRE( ( A == B ) == false );
 }
+
+TEST_CASE("find")
+{
+	tree_t<int> A;
+	A.insert(2);
+	A.insert(4);
+	
+	REQUIRE( A.find(2) == true );
+	REQUIRE( A.find(32) == false );
+}
