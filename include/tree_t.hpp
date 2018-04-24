@@ -135,7 +135,14 @@ public:
 	bool remove(T key);
 	bool find(T key) const;
 	void print(std::ostream & stream) const;
+	auto return_root();
 };
+
+template <typename T>
+auto tree_t<T>::return_root()
+{
+	return root_;
+}
 
 template <typename T>
 tree_t<T>::tree_t(std::initializer_list<T> keys)
