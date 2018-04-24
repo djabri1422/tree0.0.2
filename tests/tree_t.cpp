@@ -20,5 +20,5 @@ TEST_CASE("operator ==")
 	
 	tree_t<int> B { 1, 2 };
 	
-	REQUIRE( A == B );
+	REQUIRE( ( A == B ) == false );
 }
