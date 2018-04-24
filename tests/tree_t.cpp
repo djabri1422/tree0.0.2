@@ -8,6 +8,17 @@ TEST_CASE("remove"){
 	tree.insert(1);
 	tree.remove(1);
     
-    REQUIRE( tree.return_root() == nullptr );
+   	REQUIRE( tree.return_root() == nullptr );
 
+}
+
+TEST_CASE("operator ==")
+{
+	tree<int> A;
+	A.insert(1);
+	A.insert(2);
+	
+	tree<int> B { 1, 2 };
+	
+	REQUIRE( A == B );
 }
