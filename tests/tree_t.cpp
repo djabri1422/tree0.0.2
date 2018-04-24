@@ -8,5 +8,5 @@ SCENARIO ("init", "[init]")
 	tree_t<int> tree{ 1, 2, 3, 4, 5 };
 	tree_t<int> tree_{ 2, 43, 123, 55 };
   
-  REQIURE( (tree == tree_) == false);
+  REQUIRE(tree == tree_);
 }
