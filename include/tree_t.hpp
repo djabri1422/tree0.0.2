@@ -236,9 +236,3 @@ bool tree_t<T>::remove(T key)
 		return false;
 	}
 }
-
-
-int main()
-{
-	return 0;
-}
