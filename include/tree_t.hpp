@@ -167,6 +167,7 @@ auto tree_t<T>::operator==(tree_t const & other) const
 	{
 		return false;
 	}
+	return false;
 
 }
 
