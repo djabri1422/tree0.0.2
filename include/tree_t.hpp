@@ -101,7 +101,6 @@ private:
 					delete root;
 					root = nullptr;
 				}
-				//one child
 				else if (root->right == nullptr)
 				{
 					node_t * temp = root;
@@ -114,7 +113,6 @@ private:
 					root = root->right;
 					delete temp;
 				}
-				//two child
 				else
 				{
 					node_t * temp = FindMax(root->left);
