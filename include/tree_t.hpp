@@ -13,7 +13,7 @@ private:
 
 		node_t() : left(nullptr), right(nullptr), key(0)
 		{
-
+			
 		}
 
 		~node_t()
@@ -144,14 +144,14 @@ tree_t<T>::tree_t(std::initializer_list<T> keys)
 		root_ = nullptr;
 		for (auto & value : keys)
 		{
-			root_->insert(value);
+			this->insert(value);
 		}
 	}
 	else
 	{
 		for (auto & value : keys)
 		{
-			root_->insert(value);
+			this->insert(value);
 		}
 	}
 }
