@@ -6,7 +6,7 @@
 SCENARIO ("init", "[init]")
 {
 	tree_t<int> tree{ 1, 2, 3, 4, 5 };
-	tree_t<int> tree_{ 2, 43, 123, 55 };
+	tree_t<int> tree_{ 1, 2, 3, 4, 5 };
   
   REQUIRE(tree == tree_);
 }
