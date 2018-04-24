@@ -6,5 +6,5 @@
 SCENARIO ("init", "[init]")
 {
   BinaryTree<int> obj;
-  REQUIRE(obj.root_() == nullptr);
+  REQUIRE(obj.root_ == nullptr);
 }
